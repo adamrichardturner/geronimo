@@ -1,4 +1,4 @@
-# geronimo
+# Geronimo Tech Test
 Tech test for Geronimo
 
 ## Demo
