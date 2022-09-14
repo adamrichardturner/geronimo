@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GeronimoWeb Tech Test | Adam Turner</title>
+        <meta name="description" content="Tech test for GeronimoWeb">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Tech Test</h1>
+        </header>
+
+        <main>
+            <div class="formWrapper">
+                <div class="formWrapper__instructions">
+                    <p>Please fill in this form specifying your full name, email address, telephone number and your request to us.</p>
+                </div>
+                <div class="formWrapper__form">
+                    <form id="geronimoForm">
+                        <label for="fullName">
+                            Full Name
+                        </label>
+                        <input type="text" 
+                               name="fullName" 
+                               id="fullName" 
+                               required
+                        />
+                        <div id="name_error" class="error hidden">Please enter a valid name</div>
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <input type="email" 
+                               name="email" 
+                               id="email" 
+                               required
+                        />
+                        <div id="email_error" class="error hidden">Please enter a valid email address</div>
+                        <label for="phone">
+                            Telephone Number
+                        </label>
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                        />
+                        <div id="phone_error" class="error hidden">Please enter a valid UK phone number</div>
+                        <label for="email">
+                            My Request
+                        </label>
+                        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <script src="global.js" async defer></script>
+    </body>
+</html>

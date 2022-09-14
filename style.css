@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form CSS */
+
+.formWrapper {
+    background: #3B43F2;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.formWrapper__instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem;
+}
+
+.formWrapper__form {
+    width: 50%;
+}
+
+.formWrapper__form form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+}
+
+.formWrapper__form form input {
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.formWrapper__form form textarea {
+    text-align: left;
+}
+
+.formWrapper__form form button {
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formWrapper__form form button:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    transition: 0.125s ease-in;
+}
+
+.formWrapper__instructions p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Validation CSS */
+
+.error {
+    color: red;
+    size: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1025px) {
+    .formWrapper {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .formWrapper {
+        flex-direction: column;
+    }
+    .formWrapper__instructions {
+        width: 100%;
+    }
+
+    .formWrapper__instructions p {
+        padding: 2rem;
+        margin: 0;
+        font-size: 1.25rem;
+    }
+    
+    .formWrapper__form {
+        width: 100%;
+    }
+
+    .formWrapper__form form {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .formWrapper__instructions p {
+        font-size: 1rem;
+    }
+}
